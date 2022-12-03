@@ -40,9 +40,13 @@ Go through following labs from Play With Docker classroom:
 
 #### Quiz
 - How do you list running containers?
+Ans. docker ps
 - How do you start / stop a container?
+Ans. docker start / stop  <containerID/containerName>
 - How do you get container logs?
+Ans. docker logs <containerID/containerName>
 - How do you execute a command inside a running container?
+Ans. docker exec -it <containerID/containerName> bin/bash
 
 ## Working with Images (~1h)
 ### Hands-on
@@ -58,6 +62,7 @@ Go through following labs from Play With Docker classroom:
 
 #### Quiz
 - What is the `.` in the `docker build -t hello:latest .` command?
+Ans. It is the Dockerfile in the present in the current directory.
 
 ## Container Registries (~20m)
 Now that we have everything build and running locally, how to share that with others, how to run the images on other environments, machines etc?
@@ -71,7 +76,9 @@ Now that we have everything build and running locally, how to share that with ot
 
 #### Quiz
 - How do you pull / push images to private registries?
+Ans. docker pull / push <imageName>
 - What are three parts of a container image tag? Example: `quay.io/fedora/fedora:35`
+Ans. First Part is the organization name. Second Part is the repository name. Third part is the image name.
 
 ## Volumes (~20m)
 ### Hands-on
